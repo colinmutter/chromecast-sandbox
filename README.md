@@ -15,8 +15,8 @@ To use these yourself, simply:
  
  
 ### Notes
-The sender should scan for devices that are able to offer a matching receiver for your given AppID.  Again, this should show your device right away.  If not, make sure your device is on and discoverable, and that you have not disabled serial number sharing with Google.  The device should know that it's whitelisted and subsequently you should see your device listed on sender.html.
+The **sender** should scan for devices that are able to offer a matching receiver for your given AppID.  Again, this should show your device right away.  If not, make sure your device is on and discoverable, and that you have not disabled serial number sharing with Google.  The device should know that it's whitelisted and subsequently you should see your device listed on sender.html.
 
-The receiver should be launched upon you clicking on your device in the list.  Any failures at this point could indicate that your receiver file was not properly loaded.  One easy way to verify is to check your weblogs to see if a request was made to it by your fantastically mysterious Chromecast.
+The **receiver** should be launched upon you clicking on your device in the list.  Any failures at this point could indicate that your receiver file was not properly loaded.  One easy way to verify is to check your weblogs to see if a request was made to it by your fantastically mysterious Chromecast.
 
- 
+The **doLaunch** function in the sender has a bunch of nonsense information, but this is where you could choose to send your receiver additional information.  You can leave this for the test, as the receiver.html does not rely on any of these values.
