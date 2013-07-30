@@ -1,0 +1,16 @@
+<html data-cast-api-enabled="true" ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="/js/sender.js"></script>
+</head>
+<body>
+  <div ng-controller="SenderController">
+    Receivers for app: <span id="app"><em>{{appId}}</em></span><br/>
+    <div id="receivers" ng-repeat="rec in receivers">
+      <a href="" ng-click="launch($index)">{{rec.name}} @ {{rec.ipAddress}}</a>
+    </div>
+    <hr/>
+    Status of receiver: <span>{{activity.status}}</span>
+  </div>
+</body>
+</html>
